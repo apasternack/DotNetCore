@@ -28,7 +28,12 @@ namespace TheWorld
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseDefaultFiles();  //defines default mappings
+
+            app.UseStaticFiles();
+
             // app.Run(async (context) =>
+
             // {
             //     await context.Response.WriteAsync("Hello World!");
             // });
